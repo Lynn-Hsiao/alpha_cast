@@ -1,4 +1,6 @@
 import React from 'react'
+import './commonStyle.scss'
+
 import {Bookmark, BookmarkBorder, PlayCircleFilled} from '../assets/icons'
 
 const ListCard = () => {

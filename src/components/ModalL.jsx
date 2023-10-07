@@ -1,4 +1,5 @@
 import React from 'react'
+import './commonStyle.scss'
 import { CrossIcon, Magnify, LoadingIcon } from 'assets/icons'
 import ModalCard from './ModalCard'
 

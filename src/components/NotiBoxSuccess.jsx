@@ -1,5 +1,6 @@
 import React from 'react'
 import './commonStyle.scss'
+
 import { SuccessIcon } from '../assets/icons'
 
 const NotiBoxSuccess = ({notiText}) => {

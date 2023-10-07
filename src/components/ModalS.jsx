@@ -1,4 +1,5 @@
 import React from 'react'
+import './commonStyle.scss'
 import { CrossIcon } from 'assets/icons'
 
 const ModalS = () => {

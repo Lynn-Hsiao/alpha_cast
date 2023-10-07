@@ -1,4 +1,5 @@
 import React from 'react'
+import './commonStyle.scss'
 
 const Card = ({cover, title, author}) => {
   return (
