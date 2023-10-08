@@ -1,8 +1,17 @@
-import React from 'react'
+import React from 'react';
+import Card from '../components/Card'
+import ListCard from 'components/ListCard';
+import ModalS from 'components/ModalS';
+import ModalL from 'components/ModalL';
 
 const MainPage = () => {
   return (
-    <div>MainPage</div>
+    <div>
+      <Card />
+      <ListCard />
+      {/* <ModalS /> */}
+      <ModalL />
+    </div>
   )
 }
 
