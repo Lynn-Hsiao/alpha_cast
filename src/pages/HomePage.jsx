@@ -1,9 +1,15 @@
 import React from 'react'
+import MainContainer from 'components/MainContainer'
+import LeftNavBar from 'components/LeftNavBar'
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <div>
+      <MainContainer>
+        <LeftNavBar />
+      </MainContainer>
+    </div>
   )
 }
 
-export default HomePage
+export default HomePage 
