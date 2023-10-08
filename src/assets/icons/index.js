@@ -15,5 +15,7 @@ import { ReactComponent as Polygon } from './polygon.svg';
 import { ReactComponent as Rectangle } from './rectangle.svg';
 import { ReactComponent as SuccessIcon } from './success.svg';
 import { ReactComponent as LoadingIcon } from './loading.svg';
+import { ReactComponent as AddIcon } from './add.svg';
+import { ReactComponent as Logo } from './logo.svg';
 
-export { ALPHACast, ArrowDown, ArrowLeft, ArrowRight, Bookmark, BookmarkBorder, CrossIcon, FailIcon, SuccessIcon, InfoIcon, Magnify, MoreVert, PauseCircleFilled, PlayCircleFilled, Polygon, Rectangle,LoadingIcon }
+export { ALPHACast, ArrowDown, ArrowLeft, ArrowRight, Bookmark, BookmarkBorder, CrossIcon, FailIcon, SuccessIcon, InfoIcon, Magnify, MoreVert, PauseCircleFilled, PlayCircleFilled, Polygon, Rectangle, LoadingIcon, AddIcon, Logo }
