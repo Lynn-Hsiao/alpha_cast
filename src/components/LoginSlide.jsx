@@ -57,7 +57,24 @@ const Slide3 = () => {
 
 
 const LoginSlide = () => {
-  const [currentSlide, setcurrentSlide] = useState(1)
+  const [currentSlide, setCurrentSlide] = useState(1)
+
+  // 使用arrow-btn操作Slide
+  const handleClick = (input) => {
+    let newCurrentSlide = currentSlide + input
+    if (0 < newCurrentSlide && newCurrentSlide < 4) {
+      return (setCurrentSlide(newCurrentSlide))
+    } else if ( newCurrentSlide === 0) {
+      return (setCurrentSlide(3))
+    } else {
+      return (setCurrentSlide(1))
+    }
+  }
+  // 使用counter-btn操作Slide
+  const handleSlide1 = () => {setCurrentSlide(1)};
+  const handleSlide2 = () => {setCurrentSlide(2)};
+  const handleSlide3 = () => {setCurrentSlide(3)};
+
 
   return (
     <div className="loginSlideContainer">
@@ -66,13 +83,13 @@ const LoginSlide = () => {
       {currentSlide === 3 ? <Slide3/> : <></>}
       <div className="loginSlide-controller">
         <div className="arrow-btn">
-          <ArrowLeft className="arrow-left-btn" />
-          <ArrowRight className="arrow-right-btn" />
+          <ArrowLeft className="arrow-left-btn" onClick={() => {handleClick(-1)}} />
+          <ArrowRight className="arrow-right-btn" onClick={() => {handleClick(1)}}/>
         </div>
         <div className="slideCounter">
-          <button className={currentSlide === 1 ? "slideCounter-btn-active": "slideCounter-btn"}></button>
-          <button className={currentSlide === 2 ? "slideCounter-btn-active": "slideCounter-btn"}></button>
-          <button className={currentSlide === 3 ? "slideCounter-btn-active": "slideCounter-btn"}></button>
+          <button className={currentSlide === 1 ? "slideCounter-btn-active": "slideCounter-btn"} onClick={handleSlide1}></button>
+          <button className={currentSlide === 2 ? "slideCounter-btn-active": "slideCounter-btn"} onClick={handleSlide2} ></button>
+          <button className={currentSlide === 3 ? "slideCounter-btn-active": "slideCounter-btn" } onClick={handleSlide3}></button>
         </div>
       </div>
     </div>
