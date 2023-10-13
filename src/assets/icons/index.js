@@ -17,5 +17,6 @@ import { ReactComponent as SuccessIcon } from './success.svg';
 import { ReactComponent as LoadingIcon } from './loading.svg';
 import { ReactComponent as AddIcon } from './add.svg';
 import { ReactComponent as Logo } from './logo.svg';
+import { ReactComponent as EmptyFolder } from './emptyFolder.svg';
 
-export { ALPHACast, ArrowDown, ArrowLeft, ArrowRight, Bookmark, BookmarkBorder, CrossIcon, FailIcon, SuccessIcon, InfoIcon, Magnify, MoreVert, PauseCircleFilled, PlayCircleFilled, Polygon, Rectangle, LoadingIcon, AddIcon, Logo }
+export { ALPHACast, ArrowDown, ArrowLeft, ArrowRight, Bookmark, BookmarkBorder, CrossIcon, FailIcon, SuccessIcon, InfoIcon, Magnify, MoreVert, PauseCircleFilled, PlayCircleFilled, Polygon, Rectangle, LoadingIcon, AddIcon, Logo, EmptyFolder }
