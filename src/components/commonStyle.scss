@@ -201,6 +201,106 @@
   }
 }
 
+//Playing-Box {
+  .playingbox-container {
+    width: 312px;
+    height: 440px;
+    text-align: left;
+    padding: 32px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 16px 16px 40px 0px rgba(199, 199, 199, 0.24);
+    box-sizing: border-box;
+    .box-tittle {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1A202C;
+      margin-top: -16px;
+    }
+    .divider {
+      width: 248px;
+      height: 1px;
+      background-color: #E2E8F0;
+      margin-top: 16px;
+    }
+    .album-info {
+      display: flex;
+      justify-content: center;
+      margin-top: 16px;
+      .album-cover{
+        width: 96px;
+        height: 96px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+      .album-name {
+        width: 136px;
+        height: 80px;
+        text-align: left;
+        color:#111;
+        overflow: hidden;
+        font-size: 14px;
+        font-weight: 700;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        margin-left: 16px;
+      }
+    }
+    .album-info-text {
+      position: relative;
+      text-align: left;
+      width: 100%;
+      margin-top: 16px;
+      .album-bookmark {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+      }
+      .player {
+        font-size: 14px;
+        font-weight: 500;
+        color: #30A9DE;
+      }
+      .time-info {
+        font-size: 12px;
+        color:#93989A;
+        margin-top: 4px;
+      }
+      .album-description {
+        width: 100%;
+        font-size: 12px;
+        color: #718096;
+        margin-top: 4px;
+      }
+    }
+    .play-status {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin-top: 25px;
+    
+      .pause-btn,
+      .play-btn {
+        width: 40px;
+        height: 40px;
+      }
+    
+      .time-row-nb {
+        font-size: 12px;
+        font-weight: 500;
+        color: #000;
+        margin-left: 8px;
+      }
+    
+      .time-row {
+        margin-left: 8px;
+      }
+    }
+  }
+
 //NotiBox
 .notiContainer {
   position: fixed;
