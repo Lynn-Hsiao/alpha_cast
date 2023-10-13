@@ -170,6 +170,37 @@
   }  
 }
 
+//UserInfo
+.user-info {
+  display: flex;
+  align-items: center;
+  width: 168px;
+  height: 32px;
+  padding: 8px;
+  border-radius: 1000px;
+  background-color: #FAFAFA;
+  .user-avatar {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .username {
+    margin-left: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #111;
+  }
+  .user-more-btn {
+    width: 16px;
+    height: 16px; 
+    margin-left: auto;
+    &:hover {
+     cursor: pointer; 
+    }
+  }
+}
+
 //NotiBox
 .notiContainer {
   position: fixed;
